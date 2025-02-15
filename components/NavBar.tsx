@@ -10,7 +10,7 @@ function NavBar() {
   console.log(search);
 
   return (
-    <nav className="flex justify-between items-center w-full sm:px-16 px-6 h-20 bg-black/40 backdrop-blur-md z-100 border-b border-zinc-500">
+    <nav className="flex absolute justify-between items-center w-full sm:px-16 px-6 h-20 bg-black/40 backdrop-blur-sm z-50 border-b border-zinc-500">
       <div>
         <Link href="/">
           <img className="w-14 h-14" src="/logo.png" alt="Logo" />
