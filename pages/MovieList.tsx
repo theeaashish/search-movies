@@ -20,7 +20,7 @@ function MovieList() {
 
     useEffect(() => {
         const fetchAnime = async () => {
-            const res = await fetch("https://api.jikan.moe/v4/top/anime");
+            const res = await fetch("https://api.jikan.moe/v4/anime");
             const data = await res.json();
             setAnimeList(data.data);
             console.log(data)
