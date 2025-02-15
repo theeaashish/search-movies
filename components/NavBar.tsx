@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function NavBar() {
   const pathname = usePathname();
@@ -13,7 +14,7 @@ function NavBar() {
     <nav className="flex absolute justify-between items-center w-full sm:px-16 px-6 h-20 bg-black/40 backdrop-blur-sm z-50 border-b border-zinc-500">
       <div>
         <Link href="/">
-          <img className="w-14 h-14" src="/logo.png" alt="Logo" />
+          <Image width={50} height={50} className="w-14 h-14" src="/logo.png" alt="Logo" />
         </Link>
       </div>
 

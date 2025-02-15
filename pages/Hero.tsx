@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion"; 
+import Image from "next/image";
 
 function Hero() {
   return (
@@ -46,7 +47,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }} 
           className="relative max-w-[55vw]"
         >
-          <img className="w-full drop-shadow-lg" src="/luffy.png" alt="Luffy" />
+          <Image width={500} height={700} className="w-full drop-shadow-lg" src="/luffy.png" alt="Luffy" />
         </motion.div>
       </div>
     </div>
