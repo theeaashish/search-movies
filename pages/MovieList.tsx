@@ -3,26 +3,28 @@
 import Card from "@/components/Card";
 import React, {useEffect, useState} from "react";
 
-// interface Anime {
-//     title: string;
-//     type: string;
-//     score: number;
-//     images: {
-//       jpg: {
-//         image_url: string;
-//       };
-//     };
-//   };
+interface Anime {
+    title: string;
+    type: string;
+    score: number;
+    mal_id: number;
+    title_english?: string;
+    images: {
+      jpg: {
+        large_image_url?: string;
+      };
+    };
+  };
 
 function MovieList() {
 
-    const [animeList, setAnimeList] = useState([]);
+    const [animeList, setAnimeList] = useState<Anime[]>([]);
 
     useEffect(() => {
         const fetchAnime = async () => {
             const res = await fetch("https://api.jikan.moe/v4/anime");
             const data = await res.json();
-            setAnimeList(data.data);
+            setAnimeList(data.data as Anime[]);
             console.log(data)
         }
         fetchAnime();
