@@ -15,13 +15,15 @@ function Hero() {
       }}
     >
       <div className="absolute inset-0 bg-black/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+
 
       <div className="relative z-10 flex items-center justify-between w-full mt-20">
         <motion.div 
           initial={{ opacity: 0, x: -50 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8 }} 
-          className="max-w-[40vw] text-white"
+          className="max-w-[40vw] min-w-[30vw] text-white"
         >
           <h1 className="text-5xl font-bold leading-tight">
             Explore & Discover Your Next  
@@ -42,7 +44,7 @@ function Hero() {
           initial={{ opacity: 0, x: 50 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8, delay: 0.3 }} 
-          className="relative max-w-[40vw]"
+          className="relative max-w-[55vw]"
         >
           <img className="w-full drop-shadow-lg" src="/luffy.png" alt="Luffy" />
         </motion.div>
