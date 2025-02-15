@@ -27,7 +27,7 @@ function Hero() {
         >
           <h1 className="text-5xl font-bold leading-tight">
             Explore & Discover Your Next  
-            <span className="text-red-500"> Favorite Movies </span>
+            <span className="text-red-500"> Favorite Movies</span>
           </h1>
           <p className="text-lg mt-4 text-gray-300 leading-relaxed">
             Dive into the world of cinema with our powerful movie search app. 
